@@ -1,0 +1,34 @@
+Array ( [patient_name] => wqe [address] => qwe [course] => qwe [date_of_birth] => 12/24/2022 [todays_time] => 19:23 [phone_number] => 123 [gender] => Male [complaint] => 321 [allergy] => yes [anemia] => yes [behavioral_problem] => yes [hearing_problem] => yes [speech_problem] => yes [visual_problem] => yes [recurrent_indigestion] => yes [joundloe] => yes [eating_disorder] => yes [chicken_pox] => yes [dengue_fever] => yes [typhoid_fever] => yes [mumps] => yes [pnemonia] => yes [primary_complex] => yes [ear_discharge] => yes [tonsilitis] => yes [paratism] => yes [insomia] => yes [heart_disease] => yes [kidney_disease] => yes [convultion_epillepsy] => yes [fainting] => yes [fractures] => yes [hospitalization] => yes [operation] => yes [scoliosis] => yes [id] => yes [id_relation] => Mother [cancer] => no [cancer_relation] => Mother [tuberculosis] => yes [tuberculosis_relation] => Mother [high_blood] => yes [high_blood_relation] => Mother [diabetes] => yes [diabetes_relation] => Mother [kidney_problem] => yes [kidney_problem_relation] => Mother [seizure_disorder] => yes [seizure_disorder_relation] => Mother [asthma] => yes [asthma_relation] => Mother [tendency_to_bleed] => yes [tendency_to_bleed_relation] => Mother [mental_trouble] => yes [mental_trouble_relation] => Mother [stroke] => yes [stroke_relation] => Mother [obesity] => yes [obesity_relation] => Mother [save_Patient] => )
+
+past_medical_history`(
+    
+    
+    
+    allergy,
+    asthma,
+    anemia,
+    behavioral_problem,
+    hearing_problem,
+    speech_problem,
+    visual_problem,
+    recurrent_indigestion,
+    joundloe,
+    eating_disorder,
+    chicken_pox,
+    dengue_fever,
+    typhoid_fever,
+    mumps,
+    pnemonia,
+    primary_complex,
+    ear_discharge,
+    tonsilitis,
+    paratism,
+    insomia,
+    heart_disease,
+    kidney_disease,
+    convultion_epillepsy,
+    diabetes,fainting,
+    fractures,
+    hospitalization,
+    operation,
+    scoliosis) VALUES(yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes, yes)SQLSTATE[42S22]: Column not found: 1054 Unknown column 'yes' in 'field list'#0 D:\xampp\htdocs\ClinicManagement\patients.php(123): PDOStatement->execute() #1 {main}

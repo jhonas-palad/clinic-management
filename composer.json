@@ -1,0 +1,7 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^6.5.8",
+        "kickstartph/semaphore-client": "*",
+        "clicksend/clicksend-php": "^5.0"
+    }
+}

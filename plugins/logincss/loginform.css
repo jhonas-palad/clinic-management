@@ -1,0 +1,602 @@
+html, body, button {
+    font-family: 'RobotoLightNew', 'Ubuntu', helvetica, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+html, body {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    line-height: 1.3;
+    font-weight: 300;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 980px){
+.full-page .navbar .navbar-brand .logo-image {
+    height: 100%;
+	text-align: center;
+}
+}
+.full-page .navbar a.logo-image {
+    display: inline-table;
+    width: 200px;
+	text-align: center;
+    height: 100px;
+    background: url(images/logo.png) 0 0 no-repeat;
+}
+.logo-image {
+	padding: -500px;
+	width: -600px;
+}
+
+
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/unlc.jpg);
+	background-position: center;
+	background-size: cover;
+	position: center;
+	background-repeat: no-repeat;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    padding-right: 1px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 50px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    font-family: 'RobotoLightNew', 'Ubuntu', helvetica, sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'RobotoLightNew', 'Ubuntu', helvetica, sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: #580000;
+    font-size: 28px;
+}
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+@media screen and (min-width: 980px){
+.full-page #header h1, .full-page #header .heading_font {
+    font-size: 24px;
+}
+}
+@media screen and (min-width: 980px){
+.full-page #header {
+    padding: 18px 26px;
+}
+}
+.full-page #header h1 {
+    position: relative;
+}
+#header {
+    padding: 20px 18px;
+	background: #6B1500;
+	color: white;
+    text-align: left;
+    box-sizing: border-box;
+}
+h1 {
+	font-family: 'Roboto Slab', Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+}
+.contact-form {
+	margin-left: 20px;
+}
+.navbar {
+	background-color: #242931;
+	top: 0%;
+	text-align: center;
+	justify-content: flex-end;
+	display: flex;
+  }
+  
+  .left-nav {
+	justify-content: flex-start !important;
+	display: flex !important;
+  }
+  
+  .navbar a {
+	color: #b7c2d0;
+	font-family: 'RobotoLightNew', 'Ubuntu', helvetica, sans-serif;
+	font-size: 1.00rem;
+	text-decoration: none;
+	text-align: center;
+  }
+  
+  .navbar a:hover {
+	-webkit-background-clip: text;
+	background-image: linear-gradient(to right, #ff6e00, #ff9400, #ffb900, #f8dc00, #e9ff00);
+	background-clip: text;
+	color: transparent;
+  }
+#pic {
+	vertical-align:middle
+}
+.full-page .navbar .loginHolder a {
+	height: auto;
+	border-radius: 25px;
+    color: #fff;
+    padding: 5px 14px;
+    align-self: center;
+    font-size: 17px;
+    position: relative;
+    overflow: hidden;
+}
+.roundedBtn_processed {
+	opacity: 0.6;
+  transition: 0.3s;
+}
+.roundedBtn_processed:hover {opacity: 1}
+
+
+
+
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+.modal-login {		
+	color: #636363;
+	width: 350px;
+}
+.modal-login .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-login .modal-header {
+	border-bottom: none;   
+	position: relative;
+	justify-content: center;
+}
+.modal-login h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -15px;
+}
+.modal-login .form-control:focus {
+	border-color: #70c5c0;
+}
+.modal-login .form-control, .modal-login .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+}
+.modal-login .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}	
+.modal-login .modal-footer {
+	background: #ecf0f1;
+	border-color: #dee4e7;
+	text-align: center;
+	justify-content: center;
+	margin: 0 -20px -20px;
+	border-radius: 5px;
+	font-size: 13px;
+}
+.modal-login .modal-footer a {
+	color: #999;
+}		
+.modal-login .avatar {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -70px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #5E1008;
+	padding: 15px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-login .avatar img {
+	width: 100%;
+}
+.modal-login.modal-dialog {
+	margin-top: 80px;
+}
+.modal-login .btn, .modal-login .btn:active {
+	color: #fff;
+	border-radius: 4px;
+	background: #5E1008 !important;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border: none;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+	background: #5E1008 !important;
+	outline: none;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
+html, body, button {
+    font-family: 'RobotoLightNew', 'Ubuntu', helvetica, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+html, body {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    line-height: 1.3;
+    font-weight: 300;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 980px){
+.full-page .navbar .navbar-brand .logo-image {
+    height: 100%;
+}
+}
+.full-page .navbar a.logo-image {
+    display: inline-table;
+    width: 200px;
+    height: 100px;
+    background: url(images/logo.png) 0 0 no-repeat;
+}
+.logo-image {
+	padding: -500px;
+	width: -600px;
+}
+
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/unlc.jpg);
+	background-position: center;
+	background-size: cover;
+	position: center;
+	background-repeat: no-repeat;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: #580000;
+    font-size: 28px;
+}
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+
+#MenuItems {
+	margin-top: 9.5px;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+@media screen and (min-width: 980px){
+.full-page #header h1, .full-page #header .heading_font {
+    font-size: 24px;
+}
+}
+@media screen and (min-width: 980px){
+.full-page #header {
+    padding: 18px 26px;
+}
+}
+.full-page #header h1 {
+    position: relative;
+}
+#header {
+    padding: 20px 18px;
+	background: #6B1500;
+	color: white;
+    text-align: left;
+    box-sizing: border-box;
+}
+h1 {
+	font-family: 'Roboto Slab', Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+}
+.contact-form {
+	margin-left: 20px;
+}
+.modal-header, h4, .close {
+    color:Black !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }

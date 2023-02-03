@@ -1,0 +1,40 @@
+.bg-black {
+    background-color: #5E1008;
+    color: #fff!important;
+}
+.layout-navbar-fixed .wrapper .sidebar-dark-primary .brand-link:not([class*=navbar]){
+    background-color: #5E1008;
+}
+.navbar-dark {
+background-color: #6B1500;
+}
+a:hover {
+    background-color: #686868;
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+    background-color: #686868;
+    color: #fff;
+}
+.bg-primary .th {
+    background-color: #5E1008;
+}
+.bg-gradient-primary {
+    background: #5E1008 linear-gradient(180deg,#5E1008,#5E1008) repeat-x!important;
+    color: #fff;
+}
+.bg-primary {
+    background: #5E1008 linear-gradient(180deg,#5E1008,#5E1008) repeat-x!important;
+    color: #fff;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #5E1008;
+    border-color: #fff;
+    box-shadow: none;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #5E1008;
+    border-color: #fff;
+}
