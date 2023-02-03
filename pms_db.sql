@@ -58,7 +58,8 @@ CREATE TABLE `medicine_details` (
   `id` int(11) NOT NULL,
   -- `medicine_id` int(11) NOT NULL,
   `medicine_name` varchar(60) NOT NULL,
-  `total_capsules` INT NOT NULL
+  `total_capsules` INT NOT NULL,
+  `expiration` DATE DEFAULT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --

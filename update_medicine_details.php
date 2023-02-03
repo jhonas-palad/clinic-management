@@ -9,10 +9,17 @@ if(isset($_POST['submit'])) {
   $medicineName = $_POST['medicine_name'];
   $medicineId = $_POST['medicine_id'];
   $total_capsules = $_POST['total_capsules'];  
+  $expire_date = $_POST['expire_date'];
+
+  $expireDateArr = explode("/", $expire_date);
+
+  $cleanExpireDate = $expireDateArr[2] . '-' . $expireDateArr[0] . '-' . $expireDateArr[1];
+  
 
   $query = "UPDATE `medicine_details` 
   set `medicine_name` = '$medicineName', 
-  `total_capsules` = '$total_capsules' 
+  `total_capsules` = '$total_capsules',
+  `expire_date` = '$cleanExpireDate' 
   where `id` = $medicineId;";
 
   try {
@@ -40,8 +47,14 @@ if(isset($_POST['submit'])) {
 $medicineId = $_GET['medicine_id'];
 $medicineDetailId = $_GET['medicine_detail_id'];
 $total_capsules = $_GET['total_capsules'];
+$expire_date = $_GET['expire_date'];
+
+
+
 
 $medicine = getMedicine($con, $medicineId);
+
+
 
 ?>
 <!DOCTYPE html>
@@ -108,6 +121,24 @@ include './config/sidebar.php';?>
                   <input id="packing" name="total_capsules" class="form-control form-control-sm rounded-0"  required="required" value="<?php echo $total_capsules;?>" />
                 </div>
 
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10">
+                  <div class="form-group">
+                    <label>Expire Date</label>
+                    <div class="input-group date" 
+                      id="expire_date" 
+                      data-target-input="nearest">
+                      <input type="text" class="form-control form-control-sm rounded-0 datetimepicker-input" data-target="#expire_date" value="<?= $medicine->expire_date ?>" name="expire_date" required="required" data-toggle="datetimepicker" autocomplete="off"/>
+                      <div class="input-group-append" 
+                        data-target="#expire_date" 
+                        data-toggle="datetimepicker">
+                        <div class="input-group-text">
+                          <i class="fa fa-calendar"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="col-lg-1 col-md-2 col-sm-4 col-xs-12">
                   <label>&nbsp;</label>
                   <button type="submit" id="submit" name="submit" 
@@ -141,11 +172,16 @@ include './config/sidebar.php';?>
 
   <?php include './config/site_js_links.php'; ?>
   <?php include './config/data_tables_js.php'; ?>
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
   <script>
     showMenuSelected("#mnu_medicines", "#mi_medicine_details");
 
     var message = '<?php echo $message;?>';
-
+    $('#expire_date').datetimepicker({
+      format:"L"
+    });
     if(message !== '') {
       showCustomMessage(message);
     }

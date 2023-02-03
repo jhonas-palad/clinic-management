@@ -64,7 +64,7 @@ function getMedicines($con, $medicineId = 0) {
 
 function getMedicine($con, $medicineId = 0) {
 
-	$query = "SELECT `id`, `medicine_name` FROM `medicine_details` 
+	$query = "SELECT `id`, `medicine_name`, date_format(`expire_date`, '%m/%d/%Y') as `expire_date` FROM `medicine_details` 
 	WHERE `id` = $medicineId";
 
 	$stmt = $con->prepare($query);

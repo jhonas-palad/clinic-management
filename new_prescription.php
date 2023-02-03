@@ -137,8 +137,8 @@ include './config/sidebar.php';?>
                   <select id="patient" name="patient" class="form-control form-control-sm rounded-0" 
                   required="required">
                   <?php echo $patients;?>
-                </select>
-              </div>
+                  </select>
+                </div>
 
 
               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-10">
